@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Vaibhavi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md p-4 fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600">Vaibhavi</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition duration-300">Home</a>
+                <a href="about.html" class="text-indigo-600 font-semibold transition duration-300">About Me</a>
+                <a href="projects.html" class="text-gray-700 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="contact.html" class="text-gray-700 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-2 py-2 shadow-lg rounded-lg">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-indigo-600 font-semibold hover:bg-gray-100">About Me</a>
+            <a href="projects.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Projects</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Me Section - Content structured with Tailwind utilities -->
+    <section id="about" class="container mx-auto px-6 py-20 pt-32">
+        <h2 class="text-4xl font-extrabold text-center text-indigo-700 mb-12">About Me</h2>
+
+        <!-- About Me Paragraphs -->
+        <div class="bg-white rounded-lg shadow-xl p-8 mb-12">
+            <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                Hello! I'm Vaibhavi, a student passionate about web development. I'm currently learning HTML, CSS, and how to build responsive designs using frameworks like Tailwind CSS. My goal is to create clean, functional, and user-friendly websites.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-700">
+                I enjoy the process of bringing designs to life in the browser and am always eager to learn new techniques. This portfolio is a step in my journey to become a skilled front-end developer.
+            </p>
+        </div>
+
+        <!-- Skills Section - Using flexbox for a responsive skill tag layout -->
+        <div class="bg-white rounded-lg shadow-xl p-8 mb-12">
+            <h3 class="text-3xl font-bold text-indigo-600 mb-6 text-center">My Skills</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-semibold text-lg shadow-md">HTML</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-semibold text-lg shadow-md">CSS</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-semibold text-lg shadow-md">Tailwind CSS</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-semibold text-lg shadow-md">Responsive Design</span>
+                <!-- Add more skills as you learn them -->
+            </div>
+        </div>
+
+        <!-- Education & Experience Timeline - Simple list format -->
+        <div class="bg-white rounded-lg shadow-xl p-8">
+            <h3 class="text-3xl font-bold text-indigo-600 mb-6 text-center">Education & Experience</h3>
+            <div class="relative border-l-4 border-indigo-300 pl-8">
+                <!-- Timeline Item 1: Bootcamp/Course -->
+                <div class="mb-8 relative">
+                    <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-10 top-1.5 border-2 border-white"></div>
+                    <h4 class="text-xl font-semibold text-gray-900">Front-End Development Bootcamp</h4>
+                    <p class="text-indigo-600 text-md">DevTown</p>
+                    <p class="text-gray-700 mt-2">
+                        Completed an intensive bootcamp focusing on HTML, CSS, and responsive web design with Tailwind CSS. Gained practical experience through various projects.
+                    </p>
+                </div>
+                <!-- Timeline Item 2: Bootcamp/Course -->
+                <div class="mb-8 relative">
+                    <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-10 top-1.5 border-2 border-white"></div>
+                    <h4 class="text-xl font-semibold text-gray-900">XSS Defence Bootcamp</h4>
+                    <p class="text-indigo-600 text-md">DevTown</p>
+                    <p class="text-gray-700 mt-2">
+                        A Bootcamp focusing on XSS defense, where I learned to identify and mitigate common Cross-Site Scripting vulnerabilities in web applications.
+                    </p>
+                </div>
+                <!-- Timeline Item 3: Academic Education -->
+                <div class="mb-8 relative">
+                    <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-10 top-1.5 border-2 border-white"></div>
+                    <h4 class="text-xl font-semibold text-gray-900">Pursuing B.Tech. in Computer Science and Engineering(2024)</h4>
+                    <p class="text-indigo-600 text-md">Sardar Vallabhbhai National Institute of Technology(SVNIT)</p>
+                    <p class="text-gray-700 mt-2">
+                        Developed foundational problem-solving skills and an interest in technology.
+                    </p>
+                </div>
+                <!-- Add more timeline items as needed, keeping them simple -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-12">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Vaibhavi. All rights reserved.</p>
+            <p class="text-sm mt-2">Built with ❤️ and Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
